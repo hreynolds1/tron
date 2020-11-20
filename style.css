@@ -1,0 +1,43 @@
+body{
+    margin: 10px;
+    background-color: rgba(0,0,0,0.15);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.gridcontainer{
+    display: grid;
+    grid-template-columns: repeat(100,1fr);
+    grid-template-rows: repeat(50, 1fr);
+    background-color: black;
+    width: 750px;
+    height: 750px;
+}
+.gridcontainer *{
+    background-color: black;
+    width: 15px;
+    height: 15px;
+}
+#gamecontainer{
+    float: left;
+}
+.blue{
+    background-color: blue;
+    color: white !important;
+}
+.red{
+    background-color: red;
+    color: white !important;
+}
+.cracked{
+    background-image: url('https://assets.stickpng.com/thumbs/58e920bbeb97430e81906512.png');
+    background-size: contain;
+}
+#p2display{
+    color: red;
+    font-family: monospace;
+}
+#p1display{
+    color: blue;
+    font-family: monospace;
+}
